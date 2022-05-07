@@ -7,12 +7,12 @@ class IntroCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.all(25),
+      margin: const EdgeInsets.all(14),
       width: 60,
       height: 70,
       alignment: Alignment.center,
       child: Text(text /*"Welcome! my name is Ofek Almog"*/,
-          style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold)),
+          style: const TextStyle(fontSize: 15, fontWeight: FontWeight.bold)),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(13.0),
