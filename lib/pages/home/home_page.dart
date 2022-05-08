@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:my_portfolio/example/projects.dart';
 import 'package:my_portfolio/widgets/header.dart';
 import '../../widgets/Cards/project_card.dart';
-import 'package:my_portfolio/widgets/header.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -10,6 +9,15 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+          child: const Icon(
+            Icons.share,
+            color: Colors.white,
+          ),
+          backgroundColor: Colors.black,
+          onPressed: () {
+            print("Button Pressed");
+          }),
       body: SafeArea(
         child: SizedBox(
           width: MediaQuery.of(context).size.width,
